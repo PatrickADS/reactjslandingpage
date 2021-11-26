@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+.center{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.main{
+  padding: 40px 0;
+  width: 100%;
+  background-color: blueviolet;
+  background-image: url(https://www.iphonehacks.com/wp-content/uploads/2020/08/recreate-macos-big-sur.jpeg);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu a{
+  color: blueviolet;
+  text-decoration: none;
+  
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Cascadia Code";
+}
+.menu a:hover{
+  background-color: blueviolet;
+  color: white;
+  transition: 1s;
+}
+.menu h3{
+  color: white;
+  font-family: "Cascadia Code";
+}
+
+.form h2{
+  color: white;
+  font-family: "Cascadia Code";
+  
+}
+.form{
+  display: flex;
+  width: 100%;
+  margin:40px auto;
+  max-width: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+.items-form{
+  margin: 0 auto;
+  max-width: 540px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.items-form input[ type=text]{
+  width: 48%;
+  height: 40px;
+  margin: 8px 0px;
+  border:0;
+  border-radius: 3px;
+  color: blueviolet;
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Cascadia Code";
+}
+
+.items-form input[ type=submit]{
+  width: 98%;
+  height: 40px;
+  cursor: pointer;
+  border: 0;
+  font-size: 18px;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-family: "Cascadia Code";
+}
+.items-form input[ type=submit]:hover{
+  background-color: blueviolet;
+  color: white;
+  transition: 1s;
+}
+
+
+.conteudo-single{
+  margin-top: 40px;
+  width: 50%;
+  padding: 8px 30px;
+  font-family: "Cascadia Code";
+  color: rgb(175, 175, 175);
+}
+p.text-item{
+  color: rgb(156, 155, 155);
+}
+h3.title-int{
+  color: rgb(43, 43, 43);
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .items-form input[ type=text]{
+    width: 100%;
+    padding: 10px;
+    
+  }
+  .conteudo-single{
+    width: 100%;
+  }
+  .items-form input[ type=submit]{
+    width: 102%;
+  }
+}
